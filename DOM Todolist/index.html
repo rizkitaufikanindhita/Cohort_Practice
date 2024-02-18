@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist - DOM</title>
+  </head>
+  <script>
+    const addTodo = () => {
+      const title = document.getElementById("title").value;
+      const desc = document.getElementById("desc").value;
+      const outerDiv = document.createElement("div");
+      outerDiv.innerHTML = `
+      <div>${title}</div>
+      <div>${desc}</div>
+      <button onclick="markDone(this)">mark as done</button>
+      `;
+      const element = document.getElementById("container");
+      element.appendChild(outerDiv);
+    };
+
+    let valueDone = false;
+    const markDone = (button) => {
+      let value = !valueDone;
+      if (value) {
+        button.innerHTML = "Done";
+      } else {
+        button.innerHTML = "mark as done";
+      }
+      valueDone = value;
+    };
+  </script>
+  <style>
+    .mar {
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div class="mar"><input type="text" placeholder="title" id="title" /></div>
+    <div class="mar">
+      <input type="text" placeholder="description" id="desc" />
+    </div>
+    <div class="mar"><button onclick="addTodo()">Add Todo</button></div>
+    <div id="container"></div>
+  </body>
+</html>

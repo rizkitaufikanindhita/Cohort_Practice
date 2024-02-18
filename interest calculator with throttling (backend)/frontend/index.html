@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+  </head>
+  <script>
+    const calculate = async () => {
+      const principle = parseFloat(document.getElementById("principle").value);
+      const rate = parseFloat(document.getElementById("rate").value);
+      const time = parseFloat(document.getElementById("time").value);
+      const elementTotal = document.getElementById("total");
+      const elementInterest = document.getElementById("interest");
+      const response = await fetch(
+        `http://localhost:3000/interest?principle=${principle}&rate=${rate}&time=${time}`
+      );
+      const result = await response.json();
+      elementTotal.innerHTML = `Total : ${result.total}`;
+      elementInterest.innerHTML = `Interest : ${result.interest}`;
+    };
+  </script>
+  <style>
+    .input {
+      margin: 10px;
+    }
+    .button {
+      margin: 10px;
+    }
+    .hasil {
+      border-style: solid;
+      border-width: 1px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="input">
+      <input
+        oninput="calculate()"
+        type="text"
+        placeholder="Principle"
+        id="principle"
+      />
+    </div>
+    <div class="input">
+      <input
+        oninput="calculate()"
+        type="text"
+        placeholder="Rate in percent"
+        id="rate"
+      />
+    </div>
+    <div class="input">
+      <input
+        oninput="calculate()"
+        type="text"
+        placeholder="Time (in year)"
+        id="time"
+      />
+    </div>
+    <div class="button">
+      <div class="hasil" id="total"></div>
+    </div>
+    <div class="button">
+      <div class="hasil" id="interest"></div>
+    </div>
+  </body>
+</html>

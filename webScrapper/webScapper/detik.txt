@@ -1,0 +1,392 @@
+[
+  {
+    "id": 0,
+    "title": "Jelang El Clasico, Ancelotti Puji Xavi: Saya Tak Pengalaman Saat Seusianya",
+    "url": "https://sport.detik.com/sepakbola/detiktv/d-7140279/jelang-el-clasico-ancelotti-puji-xavi-saya-tak-pengalaman-saat-seusianya"
+  },
+  {
+    "id": 1,
+    "title": "Main di Piala Asia 2023, Hati Timnas Palestina Selalu Ada di Gaza",
+    "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-7140265/main-di-piala-asia-2023-hati-timnas-palestina-selalu-ada-di-gaza"
+  },
+  {
+    "id": 2,
+    "title": "Hasil Chelsea Vs Fulham: London Biru Menang Tipis 1-0",
+    "url": "https://sport.detik.com/sepakbola/liga-inggris/d-7140233/hasil-chelsea-vs-fulham-london-biru-menang-tipis-1-0"
+  },
+  {
+    "id": 3,
+    "title": "Cuaca Ekstrem, Pendakian ke Gunung Lawu Tutup Sementara",
+    "url": "https://travel.detik.com/travel-news/d-7139848/cuaca-ekstrem-pendakian-ke-gunung-lawu-tutup-sementara"
+  },
+  {
+    "id": 4,
+    "title": "Siap-siap Beli Pertalite Dibatasi, Aturannya Tinggal Tunggu Revisi Perpres",
+    "url": "https://oto.detik.com/berita/d-7140019/siap-siap-beli-pertalite-dibatasi-aturannya-tinggal-tunggu-revisi-perpres"
+  },
+  {
+    "id": 5,
+    "title": "Mahfud Salawat Persatuan di Lamongan, Hary Tanoe-Said Aqil Hadir",
+    "url": "https://news.detik.com/pemilu/d-7140319/mahfud-salawat-persatuan-di-lamongan-hary-tanoe-said-aqil-hadir"
+  },
+  {
+    "id": 6,
+    "title": "Bayer Leverkusen Menang di Menit Akhir, Kukuh di Puncak Bundesliga",
+    "url": "https://sport.detik.com/sepakbola/liga-jerman/d-7140317/bayer-leverkusen-menang-di-menit-akhir-kukuh-di-puncak-bundesliga"
+  },
+  {
+    "id": 7,
+    "title": "Ganjar Minta Relawan Tak Takut Hasil Survei: Kita Punya Alat Lebih Canggih",
+    "url": "https://news.detik.com/pemilu/d-7140302/ganjar-minta-relawan-tak-takut-hasil-survei-kita-punya-alat-lebih-canggih"
+  },
+  {
+    "id": 8,
+    "title": "Awal Tahun Beli Sepeda Listrik, Hemat Rp 1,5 Jutaan di Transmart Full Day Sale!",
+    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-7139438/awal-tahun-beli-sepeda-listrik-hemat-rp-1-5-jutaan-di-transmart-full-day-sale"
+  },
+  {
+    "id": 9,
+    "title": "Kesaksian Kakak saat Arjun Ditangkap Gegara Ancam Tembak Anies",
+    "url": "https://20.detik.com/detikupdate/20240113-240113079/kesaksian-kakak-saat-arjun-ditangkap-gegara-ancam-tembak-anies"
+  },
+  {
+    "id": 10,
+    "title": "4 Orang Tewas Akibat Carok di Bangkalan, 2 Pelaku Ditangkap",
+    "url": "https://20.detik.com/detikupdate/20240113-240113076/4-orang-tewas-akibat-carok-di-bangkalan-2-pelaku-ditangkap"
+  },
+  {
+    "id": 11,
+    "title": "TPN Ganjar-Mahfud Apresiasi Polisi Tangkap Pengancam Tembak Anies",
+    "url": "https://20.detik.com/detikupdate/20240113-240113086/tpn-ganjar-mahfud-apresiasi-polisi-tangkap-pengancam-tembak-anies"
+  },
+  {
+    "id": 12,
+    "title": "Presiden Lazio Bantah Fansnya Rasis ke Lukaku, Ajukan Banding Sanksi",
+    "url": "https://sport.detik.com/sepakbola/liga-italia/d-7140298/presiden-lazio-bantah-fansnya-rasis-ke-lukaku-ajukan-banding-sanksi"
+  },
+  {
+    "id": 13,
+    "title": "Jokowi Ajak Para Pengusaha Vietnam Investasi di IKN",
+    "url": "https://20.detik.com/detikupdate/20240113-240113085/jokowi-undang-para-pengusaha-vietnam-investasi-di-ikn"
+  },
+  {
+    "id": 14,
+    "title": "Korban Tewas Akibat Tanah Longsor di Kolombia Bertambah, Jadi 23 Orang",
+    "url": "https://news.detik.com/internasional/d-7140293/korban-tewas-akibat-tanah-longsor-di-kolombia-bertambah-jadi-23-orang"
+  },
+  {
+    "id": 15,
+    "title": "Rob Clinton Kardinal Jawab Kabar Kehamilan Chelsea Islan",
+    "url": "https://hot.detik.com/celeb/d-7140093/rob-clinton-kardinal-jawab-kabar-kehamilan-chelsea-islan"
+  },
+  {
+    "id": 16,
+    "title": "Piala Asia 2023: China Vs Tajikistan Tuntas 0-0, Ada Gol Dianulir VAR",
+    "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-7140291/piala-asia-2023-china-vs-tajikistan-tuntas-0-0-ada-gol-dianulir-var"
+  },
+  {
+    "id": 17,
+    "title": "Napoli Vs Salernitana: Gol di Injury Time Menangkan Partenopei",
+    "url": "https://sport.detik.com/sepakbola/liga-italia/d-7140286/napoli-vs-salernitana-gol-di-injury-time-menangkan-partenopei"
+  },
+  {
+    "id": 18,
+    "title": "Ganjar: Kita di Negara Berbhineka, Tak Ada yang Bisa Klaim Paling Berjasa",
+    "url": "https://news.detik.com/pemilu/d-7140285/ganjar-kita-di-negara-berbhineka-tak-ada-yang-bisa-klaim-paling-berjasa"
+  },
+  {
+    "id": 19,
+    "title": "Airlangga Bela Prabowo Jawab Sindiran Hasto soal Pilpres Rasa Pandawa Vs Kurawa",
+    "url": "https://www.detik.com/bali/berita/d-7140138/airlangga-bela-prabowo-jawab-sindiran-hasto-soal-pilpres-rasa-pandawa-vs-kurawa"
+  },
+  {
+    "id": 20,
+    "title": "Paus Putih Langka Terlihat di Phuket, Turis Sampai Terpukau",
+    "url": "https://travel.detik.com/travel-news/d-7140053/paus-putih-langka-terlihat-di-phuket-turis-sampai-terpukau"
+  },
+  {
+    "id": 21,
+    "title": "Jelang El Clasico, Ancelotti Puji Xavi: Saya Tak Pengalaman Saat Seusianya",
+    "url": "https://20.detik.com/detikupdate/20240113-240113096/jelang-el-clasico-ancelotti-puji-xavi-saya-tak-pengalaman-saat-seusianya"
+  },
+  {
+    "id": 22,
+    "title": "Terungkap Alasan Diubahnya Nama Halte TransJakarta",
+    "url": "https://news.detik.com/berita/d-7140235/terungkap-alasan-diubahnya-nama-halte-transjakarta"
+  },
+  {
+    "id": 23,
+    "title": "Sapa Relawan Batam, Prabowo Kibarkan dan Cium Bendera Palestina",
+    "url": "https://20.detik.com/detikupdate/20240113-240113092/sapa-relawan-batam-prabowo-kibarkan-dan-cium-bendera-palestina"
+  },
+  {
+    "id": 24,
+    "title": "Relawan T4G Kabupaten Alor Deklarasi Dukung Prabowo-Gibran",
+    "url": "https://news.detik.com/pemilu/d-7140274/relawan-t4g-kabupaten-alor-deklarasi-dukung-prabowo-gibran"
+  },
+  {
+    "id": 25,
+    "title": "Pemotor Masuk Tol Jagorawi Hendak ke Puncak, Tersasar karena Ikuti Peta",
+    "url": "https://news.detik.com/berita/d-7140271/pemotor-masuk-tol-jagorawi-hendak-ke-puncak-tersasar-karena-ikuti-peta"
+  },
+  {
+    "id": 26,
+    "title": "Ini Sebabnya Orang Terbangun Pukul 3 dan 4 Pagi, Terkait Stress",
+    "url": "https://inet.detik.com/science/d-7139992/ini-sebabnya-orang-terbangun-pukul-3-dan-4-pagi-terkait-stress"
+  },
+  {
+    "id": 27,
+    "title": "Main di Piala Asia 2023, Hati Timnas Palestina Selalu Ada di Gaza",
+    "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-7140265/main-di-piala-asia-2023-hati-timnas-palestina-selalu-ada-di-gaza"
+  },
+  {
+    "id": 28,
+    "title": "Laut Merah Makin Panas Usai Serangan Serangan AS-Inggris ke Yaman Dibalas",
+    "url": "https://news.detik.com/internasional/d-7140262/laut-merah-makin-panas-usai-serangan-serangan-as-inggris-ke-yaman-dibalas"
+  },
+  {
+    "id": 29,
+    "title": "Palmer Sukses Eksekusi Penalti, Chelsea Kalahkan Fulham",
+    "url": "https://20.detik.com/detikupdate/20240113-240113095/palmer-sukses-eksekusi-penalti-chelsea-menang-tipis-1-0-lawan-fulham"
+  },
+  {
+    "id": 30,
+    "title": "Pramugari Beberkan Sifat Penumpang yang Paling Dibenci",
+    "url": "https://travel.detik.com/travel-news/d-7140086/pramugari-beberkan-sifat-penumpang-yang-paling-dibenci"
+  },
+  {
+    "id": 31,
+    "title": "Raffi Ahmad Ringan Tangan Bantu Teman, Ingat Roda Kehidupan Terus Berputar",
+    "url": "https://hot.detik.com/celeb/d-7140236/raffi-ahmad-ringan-tangan-bantu-teman-ingat-roda-kehidupan-terus-berputar"
+  },
+  {
+    "id": 32,
+    "title": "7 Foto Terbaru Sean Putra Olla Ramlan, Dipuji Makin Ganteng Mirip Tom Cruise",
+    "url": "https://wolipop.detik.com/foto-entertainment/d-7140110/7-foto-terbaru-sean-putra-olla-ramlan-dipuji-makin-ganteng-mirip-tom-cruise"
+  },
+  {
+    "id": 33,
+    "title": "Inul Daratista Jago Masak hingga Kulineran Bareng Emak-emak",
+    "url": "https://food.detik.com/foto-kuliner/d-7140180/inul-daratista-jago-masak-hingga-kulineran-bareng-emak-emak"
+  },
+  {
+    "id": 34,
+    "title": "Juventus Dekati Jordan Henderson?",
+    "url": "https://sport.detik.com/sepakbola/liga-italia/d-7140255/juventus-dekati-jordan-henderson"
+  },
+  {
+    "id": 35,
+    "title": "Murah Banget! Beli AC 1/2 PK di Transmart Full Day Sale Diskon Rp 1,5 Jutaan",
+    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-7139636/murah-banget-beli-ac-1-2-pk-di-transmart-full-day-sale-diskon-rp-1-5-jutaan"
+  },
+  {
+    "id": 36,
+    "title": "Ganjar Apresiasi Polisi Tangkap Pengancam Tembak Anies: Bagus, Gerak Cepat",
+    "url": "https://news.detik.com/pemilu/d-7140253/ganjar-apresiasi-polisi-tangkap-pengancam-tembak-anies-bagus-gerak-cepat"
+  },
+  {
+    "id": 37,
+    "title": "Pemotor Nyelonong Tol Jagorawi Berakhir Ditilang Polisi, STNK Disita!",
+    "url": "https://news.detik.com/berita/d-7140252/pemotor-nyelonong-tol-jagorawi-berakhir-ditilang-polisi-stnk-disita"
+  },
+  {
+    "id": 38,
+    "title": "Jokowi Sebut Produsen Mobil Vietnam VinFast Investasi di RI Secepatnya",
+    "url": "https://20.detik.com/detikupdate/20240113-240113089/jokowi-sebut-produsen-mobil-vietnam-vinfast-investasi-di-ri-secepatnya"
+  },
+  {
+    "id": 39,
+    "title": "Rangkaian Acara Bstation Anime Carnival 2023, Ada Kompetisi hingga Award",
+    "url": "https://20.detik.com/detikupdate/20240113-240113087/rangkaian-acara-bstation-anime-carnival-2023-ada-kompetisi-hingga-award"
+  },
+  {
+    "id": 40,
+    "title": "Terkontaminasi Salmonella, Produk Quaker Oats Ditarik dari Peredaran AS",
+    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-7139980/terkontaminasi-salmonella-produk-quaker-oats-ditarik-dari-peredaran-as"
+  },
+  {
+    "id": 41,
+    "title": "Aura Kasih Ogah Nempel dengan Pasangan: Perempuan Harus Punya Pencapaian",
+    "url": "https://hot.detik.com/celeb/d-7140153/aura-kasih-ogah-nempel-dengan-pasangan-perempuan-harus-punya-pencapaian"
+  },
+  {
+    "id": 42,
+    "title": "Studio Pixar Bakal PHK 20% Pekerja",
+    "url": "https://20.detik.com/detikupdate/20240113-240113094/studio-pixar-bakal-phk-20-pekerja"
+  },
+  {
+    "id": 43,
+    "title": "Sancho Pulang ke Dortmund, Ten Hag: Semoga yang Terbaik Untuknya",
+    "url": "https://20.detik.com/detikupdate/20240113-240113090/sancho-pulang-ke-dortmund-ten-hag-semoga-yang-terbaik-untuknya"
+  },
+  {
+    "id": 44,
+    "title": "Google Duitnya Banyak Kok PHK Ratusan Karyawan?",
+    "url": "https://inet.detik.com/cyberlife/d-7140043/google-duitnya-banyak-kok-phk-ratusan-karyawan"
+  },
+  {
+    "id": 45,
+    "title": "Paket All-In Wedding Paling Banyak Diminati Calon Pengantin",
+    "url": "https://20.detik.com/detikupdate/20240113-240113093/paket-all-in-wedding-paling-banyak-diminati-calon-pengantin-"
+  },
+  {
+    "id": 46,
+    "title": "Hasil Chelsea Vs Fulham: London Biru Menang Tipis 1-0",
+    "url": "https://sport.detik.com/sepakbola/liga-inggris/d-7140233/hasil-chelsea-vs-fulham-london-biru-menang-tipis-1-0"
+  },
+  {
+    "id": 47,
+    "title": "Kondisi Terkini Remaja 15 Tahun Usai Diperkosa Ayah Tiri di Tangerang",
+    "url": "https://news.detik.com/berita/d-7140228/kondisi-terkini-remaja-15-tahun-usai-diperkosa-ayah-tiri-di-tangerang"
+  },
+  {
+    "id": 48,
+    "title": "Obral Koper Murah Meriah! Cuma di Transmart Full Day Sale Besok",
+    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-7139773/obral-koper-murah-meriah-cuma-di-transmart-full-day-sale-besok"
+  },
+  {
+    "id": 49,
+    "title": "Serangan Udara Israel Tewaskan 13 Anggota Keluarga di Rafah",
+    "url": "https://20.detik.com/detikupdate/20240113-240113088/serangan-udara-israel-tewaskan-13-anggota-keluarga-di-rafah"
+  },
+  {
+    "id": 50,
+    "title": "Muhammadiyah Salut Polisi Tangkap Pengancam Tembak Anies: Bukti Tak Memihak",
+    "url": "https://news.detik.com/berita/d-7140219/muhammadiyah-salut-polisi-tangkap-pengancam-tembak-anies-bukti-tak-memihak"
+  },
+  {
+    "id": 51,
+    "title": "Maaf, Tiket Terusan Pantai Pangandaran-Batukaras Tak Berlaku Lagi",
+    "url": "https://travel.detik.com/travel-news/d-7139959/maaf-tiket-terusan-pantai-pangandaran-batukaras-tak-berlaku-lagi"
+  },
+  {
+    "id": 52,
+    "title": "Apple Minggir Dulu, Microsoft Jadi Perusahaan Paling Berharga di Dunia",
+    "url": "https://finance.detik.com/bursa-dan-valas/d-7140004/apple-minggir-dulu-microsoft-jadi-perusahaan-paling-berharga-di-dunia"
+  },
+  {
+    "id": 53,
+    "title": "Vendor Ungkap Minat Pengantin Gelar Pesta Pernikahan Turun Sejak Pandemi",
+    "url": "https://20.detik.com/detikupdate/20240113-240113091/vendor-ungkap-minat-pengantin-gelar-pesta-pernikahan-turun-sejak-pandemi"
+  },
+  {
+    "id": 54,
+    "title": "Evakuasi Warga Disabilitas di Kaki Gunung Marapi",
+    "url": "https://news.detik.com/foto-news/d-7140118/evakuasi-warga-disabilitas-di-kaki-gunung-marapi"
+  },
+  {
+    "id": 55,
+    "title": "Bikin Ngiler! 10 Momen Nikita Mirzani Makan Bakso di Warung Kaki Lima",
+    "url": "https://food.detik.com/foto-kuliner/d-7140194/bikin-ngiler-10-momen-nikita-mirzani-makan-bakso-di-warung-kaki-lima"
+  },
+  {
+    "id": 56,
+    "title": "Imbauan Waspada Sebab Banyak Sesar Aktif di Sumedang Pemicu Gempa",
+    "url": "https://news.detik.com/berita/d-7140193/imbauan-waspada-sebab-banyak-sesar-aktif-di-sumedang-pemicu-gempa"
+  },
+  {
+    "id": 57,
+    "title": "Sinar Matahari Tak Terlalu Terik, Artinya Aman 'Skip' Sunscreen? Dokter Bilang Gini",
+    "url": "https://health.detik.com/berita-detikhealth/d-7140192/sinar-matahari-tak-terlalu-terik-artinya-aman-skip-sunscreen-dokter-bilang-gini"
+  },
+  {
+    "id": 58,
+    "title": "Yenny Wahid: Anak Tukang Cilok-Anak Presiden Harus Setara dalam Hukum",
+    "url": "https://news.detik.com/pemilu/d-7140191/yenny-wahid-anak-tukang-cilok-anak-presiden-harus-setara-dalam-hukum"
+  },
+  {
+    "id": 59,
+    "title": "Sejumlah PMI Audiensi dengan Bawaslu soal WNI Malaysia Tak Masuk DPT",
+    "url": "https://news.detik.com/pemilu/d-7140312/sejumlah-pmi-audiensi-dengan-bawaslu-soal-wni-malaysia-tak-masuk-dpt"
+  },
+  {
+    "id": 60,
+    "title": "Ganjar Minta Relawan Tak Takut Hasil Survei: Kita Punya Alat Lebih Canggih",
+    "url": "https://news.detik.com/pemilu/d-7140302/ganjar-minta-relawan-tak-takut-hasil-survei-kita-punya-alat-lebih-canggih"
+  },
+  {
+    "id": 61,
+    "title": "Ganjar: Kita di Negara Berbhineka, Tak Ada yang Bisa Klaim Paling Berjasa",
+    "url": "https://news.detik.com/pemilu/d-7140285/ganjar-kita-di-negara-berbhineka-tak-ada-yang-bisa-klaim-paling-berjasa"
+  },
+  {
+    "id": 62,
+    "title": "Relawan T4G Kabupaten Alor Deklarasi Dukung Prabowo-Gibran",
+    "url": "https://news.detik.com/pemilu/d-7140274/relawan-t4g-kabupaten-alor-deklarasi-dukung-prabowo-gibran"
+  },
+  {
+    "id": 63,
+    "title": "Kini Giliran UMKM DKI Jakarta Gabung Gaspoll Bro Dukung Prabowo-Gibran",
+    "url": "https://news.detik.com/pemilu/d-7140300/kini-giliran-umkm-dki-jakarta-gabung-gaspoll-bro-dukung-prabowo-gibran"
+  },
+  {
+    "id": 64,
+    "title": "Ganjar Apresiasi Polisi Tangkap Pengancam Tembak Anies: Bagus, Gerak Cepat",
+    "url": "https://news.detik.com/pemilu/d-7140253/ganjar-apresiasi-polisi-tangkap-pengancam-tembak-anies-bagus-gerak-cepat"
+  },
+  {
+    "id": 65,
+    "title": "pilpres 2024",
+    "url": "https://www.detik.com/tag/pilpres-2024"
+  },
+  {
+    "id": 66,
+    "title": "debat pilpres 2024",
+    "url": "https://www.detik.com/tag/debat-pilpres-2024"
+  },
+  {
+    "id": 67,
+    "title": "bupati labuhanbatu",
+    "url": "https://www.detik.com/tag/bupati-labuhanbatu"
+  },
+  {
+    "id": 68,
+    "title": "piala asia 2023",
+    "url": "https://www.detik.com/tag/piala-asia-2023"
+  },
+  {
+    "id": 69,
+    "title": "lpdp",
+    "url": "https://www.detik.com/tag/lpdp"
+  },
+  {
+    "id": 70,
+    "title": "Laut Merah Makin Panas Usai Serangan Serangan AS-Inggris ke Yaman Dibalas",
+    "url": "https://news.detik.com/internasional/d-7140262/laut-merah-makin-panas-usai-serangan-serangan-as-inggris-ke-yaman-dibalas"
+  },
+  {
+    "id": 71,
+    "title": "Terungkap Alasan Diubahnya Nama Halte TransJakarta",
+    "url": "https://news.detik.com/berita/d-7140235/terungkap-alasan-diubahnya-nama-halte-transjakarta"
+  },
+  {
+    "id": 72,
+    "title": "Ganjar Minta Relawan Tak Takut Hasil Survei: Kita Punya Alat Lebih Canggih",
+    "url": "https://news.detik.com/pemilu/d-7140302/ganjar-minta-relawan-tak-takut-hasil-survei-kita-punya-alat-lebih-canggih"
+  },
+  {
+    "id": 73,
+    "title": "5 Fakta Ngeri Carok di Bangkalan: Identitas 4 Orang Tewas hingga Motif",
+    "url": "https://news.detik.com/berita/d-7140135/5-fakta-ngeri-carok-di-bangkalan-identitas-4-orang-tewas-hingga-motif"
+  },
+  {
+    "id": 74,
+    "title": "Piala Asia 2023: China Vs Tajikistan Tuntas 0-0, Ada Gol Dianulir VAR",
+    "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-7140291/piala-asia-2023-china-vs-tajikistan-tuntas-0-0-ada-gol-dianulir-var"
+  },
+  {
+    "id": 75,
+    "title": "Anies Kaget Jokowi Singgung Serangan Personal: Kok Presiden Ikut Komentar?",
+    "url": "https://news.detik.com/pemilu/d-7131880/anies-kaget-jokowi-singgung-serangan-personal-kok-presiden-ikut-komentar"
+  },
+  {
+    "id": 76,
+    "title": "Respons Ucapan Prabowo 'Dia Pintar atau Goblok Sih?', Anies: Matur Nuwun",
+    "url": "https://www.detik.com/jogja/berita/d-7134225/respons-ucapan-prabowo-dia-pintar-atau-goblok-sih-anies-matur-nuwun"
+  },
+  {
+    "id": 77,
+    "title": "Andre Rosiade: Anies Tak Beretika dan Berani Bohong Demi Kekuasaan",
+    "url": "https://news.detik.com/pemilu/d-7130676/andre-rosiade-anies-tak-beretika-dan-berani-bohong-demi-kekuasaan"
+  }
+]

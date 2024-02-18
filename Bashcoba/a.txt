@@ -1,0 +1,4 @@
+Hello Jupiter
+Hello Mars
+Error
+error pada bagian console

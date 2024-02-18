@@ -1,0 +1,99 @@
+git clone name.git <nama folder baru>
+
+cd 
+
+git log --graph    (mengetahui semua commit dan tindakan yang dilakukan)
+
+git remote -v   (liat kemana gitnya akan di push)
+
+git branch -m master main (ngubah master menjadi main)
+
+git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main  (membuat main menjadi yg utama)
+
+git remote add origin https://github.com/rizkitaufikanindhita/ToDoapp.git   (menambahkan remote baru dengan nama origin)
+
+git remote remove origin   (remove remote dengan nama origin) *disarankan origin saja
+
+git status    (melihat status commit git)
+
+git add * atau git add --all  (menambah semua perubahan)
+
+git commit -m "<message>"   (-mnya itu message, message harus relevan dengan apa yang dilakukan)
+
+git push -u <name remote> <kemana main/branch>  e.g git push -u origin main   (push ke repo) (dilakukan di awal saja)
+
+// personal access tokens (password untuk melakukan push) *kalau perlu
+
+// Branch (cabang dari main yang membawa semua yang ada di main)
+main -> untuk customer
+staging -> untuk internal perusahaan kebutuhan QA
+dev -> untuk developer
+git branch [new_branch]
+
+// Fetching
+setelah buat branch lakukan fetching 
+git fetch
+
+git branch (mengetahui kita di branch yang mana)
+
+dev kalau udh ok di merge ke staging buat QA kalau udh ok di merge ke main
+
+cara pindah 
+git checkout <nama branch>
+
+e.g git checkout dev
+// posisi di dev 
+kalau sudah dilakukan perubahan dicek dengan git status -> git add * -> git commit -m "pesan" -> git log --graph -> git push
+// melakukan perubahan pada dev
+// eh seharusnya di branch baru
+// maka pakai branch bayangan
+
+buat branch bayangan 
+git checkout -b "<nama branch>"
+e.g
+git checkout -b "bugfix/title"
+git status
+git add *  (menambahkan yang sudah diubah)
+git status
+git commit -m "perubahan"
+git push
+(kondisi belum ada di github)
+menaikkan branch bayangan ke github
+git push --set-upstream origin bugfix/title           (disesuaikan dengan nama branch bayangannya)
+
+merging
+git merge "<nama branch>"
+git push
+
+e.g 
+posisi dev
+git merge "bugfix/title"
+git push
+done
+
+posisi staging
+git checkout staging
+git merge "dev"
+buka vscode sesuaikan konflik mana yang harus ditahan
+git add --all
+git commit -m "perubahan"
+git push
+
+// delete branch
+git branch -d "nama_branch"
+
+// SSH Key
+ssh-keygen -t rsa -b 4096 -C "email@example.com"
+
+
+// resolve conflict
+git log --merge -> cetak list commit yang menyebabkan conflik
+git diff -> identify the differences between the states repositories or files
+git checkout -> undo the changes to the file or for changing branches 
+git reset --mixed -> undo the changes to the working directory and staging area
+git merge --abort -> returning back to the state before the merging began
+git reset -> reset the conflicted files to their original state
+
+
+
+

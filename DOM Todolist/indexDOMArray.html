@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+  </head>
+  <style>
+    .mar {
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div>
+      <button onclick="showTodo(state)">Generate Task</button>
+      <div id="container" class="mar"></div>
+    </div>
+  </body>
+  <script>
+    const createChild = (title, description, id) => {
+      const first = document.createElement("div");
+      first.setAttribute("class", "mar");
+      first.setAttribute("id", id);
+      const isi1 = document.createElement("div");
+      isi1.innerHTML = title;
+      const isi2 = document.createElement("div");
+      isi2.innerHTML = description;
+      const isi3 = document.createElement("button");
+      isi3.innerHTML = "mark as done";
+      isi3.setAttribute("onclick", `mark(${id})`);
+      first.appendChild(isi1);
+      first.appendChild(isi2);
+      first.appendChild(isi3);
+      return first;
+    };
+
+    const state = [
+      {
+        title: "backend",
+        description: "expressJS",
+        id: 1,
+      },
+      {
+        title: "frontend",
+        description: "reactJS",
+        id: 2,
+      },
+      {
+        title: "devops",
+        description: "kubernates",
+        id: 3,
+      },
+    ];
+
+    const showTodo = (state) => {
+      const element = document.getElementById("container");
+      element.innerHTML = "";
+      for (let i = 0; i < state.length; i++) {
+        const child = createChild(
+          state[i].title,
+          state[i].description,
+          state[i].id
+        );
+        element.appendChild(child);
+      }
+    };
+
+    let valueDone = false;
+
+    const mark = (id) => {
+      const parent = document.getElementById(id);
+      let value = !valueDone;
+      if (value) {
+        parent.children[2].innerHTML = "Done";
+      } else {
+        parent.children[2].innerHTML = "mark as done";
+      }
+      valueDone = value;
+    };
+  </script>
+</html>

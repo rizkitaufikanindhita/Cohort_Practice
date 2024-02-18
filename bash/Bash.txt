@@ -1,0 +1,25 @@
+Bash
+pwd -> posisi direktori sekarang
+ls -> list semua yang ada didirektori
+ls folderA -> cek semua yang ada di folder A
+ls -l -> cetak list lengkap
+ls -R -> cetak list breakdown sampai folder-foldernya
+ls -lt -> cetak list lengkap tapi diurutkan dari yang paling baru
+ls -lr -> cetak list lengkap tapi diurutkan dari yang paling lama
+ls -la -> cetak list lengkap sampai hidden files
+ls -l || grep .js -> cetak list lengkap dengan .js ditampilkan paling atas
+ls *.js -> menampilkan yang hanya .js
+ls zoo* -> menampilkan semua yang diawali zoo
+ls .. -> menampilkan semua pada folder sebelum
+cat a.txt -> menampilkan yang ada didalam a.txt
+cat > a.txt lalu shift enter dan menuliskan sesuatu lalu ctrl + d, maka file a.txt akan diubah dengan sesuatu yang ditulis
+cat >> a.txt -> append sesuatu di file a.txt (perintah sama dengan atas)
+mkdir test && cd test -> buat folder test lalu pindah ke test
+mkdir -p frontend/css -> buat folder frontend dan folder css
+mkdir -p frontend/react -> akan buat folder react karena folder frontend sudah dibuat diatas
+cp -r coba2/a.txt frontend -> copy a.txt di folder coba2 ke folder frontend
+rm a.txt -> remove a.txt
+rm -r coba -> remove folder coba
+chmod -> change permission
+grep "Error" a.txt -> menampilkan error dari file a.txt
+grep -v "Error" a.txt -> menampilkan selain error dari file a.txt

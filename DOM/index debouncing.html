@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum</title>
+  </head>
+  <script>
+    // Debouncing = delay sending request to backend (agar backend tidak berat)
+    let timeOut;
+    const debounceSum = () => {
+      // ketika fungsi ini tidak dipanggil selama 1000ms maka akan call function sum
+      // tapi fungsi ini akan dijalankan ketika ngetik
+      clearTimeout(timeOut);
+
+      timeOut = setTimeout(() => {
+        sum();
+      }, 1000);
+    };
+    const sum = async () => {
+      const firstNum = document.getElementById("num1").value;
+      const secondNum = document.getElementById("num2").value;
+      const element = document.getElementById("finalSum");
+      // element.innerHTML = `sum is ${
+      //   parseFloat(firstNum) + parseFloat(secondNum)
+      // }`;
+      const response = await fetch(
+        `http://localhost:3000/sum?a=${firstNum}&b=${secondNum}`
+      );
+      const result = await response.json();
+      element.innerHTML = result;
+    };
+  </script>
+  <style>
+    /* . menyatakan class */
+    /* # menyatakan id */
+    .container {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    #div1 {
+      background-color: aqua;
+    }
+    #div2 {
+      background-color: brown;
+    }
+    .grid {
+      border-style: solid;
+      border-width: 1px;
+      color: #000;
+      margin: 5px;
+      padding: 5px;
+    }
+    #bg {
+      padding: 5px;
+      background-color: aquamarine;
+    }
+    #finalSum {
+      background-color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input
+        oninput="debounceSum()"
+        type="text"
+        placeholder="first number"
+        id="num1"
+      />
+    </div>
+    <div class="container">
+      <input
+        oninput="debounceSum()"
+        type="text"
+        placeholder="second number"
+        id="num2"
+      />
+    </div>
+    <div class="container" id="bg">
+      <div class="grid" id="finalSum"></div>
+    </div>
+  </body>
+</html>
+
+<!-- class digunakan untuk beberapa div dan sama stylenya kalau mau div dibuat agak
+berbeda dengan yang lain tapi dasarnya sama pakai class maka bisa pakai id (id
+sebagai penanda div jadi harus unique) -->
+<!-- dasarnya pakai class lalu dibedakan sedikit dengan id -->
+<!-- id digunakan sebagai akses element -->
+
+<!-- lanjut 01:23 week 4.1 -->

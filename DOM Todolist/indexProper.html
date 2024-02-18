@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+  </head>
+  <style>
+    .mar {
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div>
+      <div class="mar">
+        <input id="title" type="text" placeholder="title" />
+      </div>
+      <div class="mar">
+        <input id="description" type="text" placeholder="description" />
+      </div>
+      <div class="mar"><button onclick="addTodo()">add todo</button></div>
+      <div id="container" class="mar"></div>
+    </div>
+  </body>
+  <script>
+    let globalId = 1;
+    const createChild = (title, description, id) => {
+      const first = document.createElement("div");
+      first.setAttribute("class", "mar");
+      first.setAttribute("id", id);
+      const isi1 = document.createElement("div");
+      isi1.innerHTML = title;
+      const isi2 = document.createElement("div");
+      isi2.innerHTML = description;
+      const isi3 = document.createElement("button");
+      isi3.innerHTML = "mark as done";
+      isi3.setAttribute("onclick", `mark(${id})`);
+      first.appendChild(isi1);
+      first.appendChild(isi2);
+      first.appendChild(isi3);
+      return first;
+    };
+
+    const addTodo = () => {
+      const title = document.getElementById("title").value;
+      const description = document.getElementById("description").value;
+      const parent = document.getElementById("container");
+      parent.appendChild(createChild(title, description, globalId++));
+    };
+
+    let valueDone = false;
+
+    const mark = (id) => {
+      const parent = document.getElementById(id);
+      let value = !valueDone;
+      if (value) {
+        parent.children[2].innerHTML = "Done";
+      } else {
+        parent.children[2].innerHTML = "mark as done";
+      }
+      valueDone = value;
+    };
+  </script>
+</html>

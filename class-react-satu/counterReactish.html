@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="btnCounter"></div>
+  </body>
+  <script>
+    // component
+    const buttonComponent = (count) => {
+      const button = document.createElement("button");
+      button.setAttribute("onclick", "rerender()");
+      button.innerHTML = `count ${count}`;
+      return button;
+    };
+
+    // state
+    const state = {
+      count: 0,
+    };
+
+    // re render
+    // in react, its automatic completed by react
+    const rerender = () => {
+      document.getElementById("btnCounter").innerHTML = "";
+      const elemen = buttonComponent(state.count++);
+      document.getElementById("btnCounter").appendChild(elemen);
+    };
+
+    rerender();
+  </script>
+</html>
+
+<!-- urutan react logic -->
+<!-- 1. buat component -->
+<!-- 2. buat state -->
+<!-- 3. re render (auto by react) -->
+
+<!-- lanjut 45:00 -->
