@@ -1,16 +1,12 @@
 import { Fragment } from "react";
 import useAppStore from "../store";
-import { shallow } from "zustand/shallow";
 
 const Me = () => {
-  const [increaseMessageCount, meCount] = useAppStore(
-    (state) => [state.increaseMessageCount, state.meCount()],
-    shallow
-  );
+  const meCount = useAppStore((state) => state.meCount());
 
   return (
     <Fragment>
-      <button onClick={increaseMessageCount} style={{ margin: "5px" }}>
+      <button style={{ margin: "5px" }}>
         Me ({meCount >= 100 ? "99+" : meCount})
       </button>
     </Fragment>

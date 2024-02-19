@@ -1,8 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Fragment } from "react";
 import useAppStore from "../store";
 
 const Jobs = () => {
   const jobsCount = useAppStore((state) => state.jobsCount);
+
   return (
     <Fragment>
       <button style={{ margin: "5px" }}>
