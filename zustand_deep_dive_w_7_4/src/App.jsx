@@ -22,4 +22,4 @@ function App() {
 
 export default App;
 
-//lanjut 10:10 di week 7.4 | Recoil Deep dive
+//lanjut 33:00 di week 7.4 | Recoil Deep dive
