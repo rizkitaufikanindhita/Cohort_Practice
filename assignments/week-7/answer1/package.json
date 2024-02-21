@@ -1,5 +1,5 @@
 {
-  "name": "tailwind_w_8_1",
+  "name": "answer1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@storybook/builder-vite": "^7.6.17",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
