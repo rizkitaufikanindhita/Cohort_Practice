@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useColorStore = create((set)=>({
-    warna : "white",
+    warna : "slate",
     addColor : (value) =>set({warna:value})
 }))
 

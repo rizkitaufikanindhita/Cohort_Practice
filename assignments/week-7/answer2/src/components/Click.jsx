@@ -13,3 +13,4 @@ const Click = ({color}) => {
 };
 
 export default Click;
+
