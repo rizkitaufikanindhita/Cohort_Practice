@@ -10,7 +10,7 @@ const { User, Manager } = require("../db/db");
 app.use(express.json());
 app.use(cors());
 
-router.post("/login", async (req, res) => {
+router.post("/", async (req, res) => {
   const { username, password } = req.body;
   const loginFormat = loginSchema.safeParse(req.body);
   if (loginFormat.success) {
