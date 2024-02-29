@@ -1,9 +1,11 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import useAppStore from "../../store";
 import { shallow } from "zustand/shallow";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const url = import.meta.env.VITE_URL_LOGIN;
+import hideIcon from "/hide.png";
+import showIcon from "/view.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -39,6 +41,13 @@ const Login = () => {
     }
   };
 
+  let valShowPassword = false;
+  const [showPassword, setShowPassword] = useState(valShowPassword);
+  const togglePassword = () => {
+    setShowPassword(!valShowPassword);
+  };
+  valShowPassword = showPassword;
+
   return (
     <Fragment>
       <div className="w-full h-screen bg-slate-700">
@@ -50,20 +59,34 @@ const Login = () => {
               </div>
               <div className="w-64 h-48 bg-slate-500 m-2 p-2 rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-center items-center">
                 <div className="grid col-span-1 text-white">
-                  <input
-                    type="text"
-                    placeholder="Username"
-                    className="my-2 text-center border border-gray-500 rounded-md w-fit h-fit bg-slate-600 "
-                    onChange={(e) => setUsername(e.target.value)}
-                  />
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="my-2 text-center border border-gray-500 rounded-md w-fit h-fit bg-slate-600"
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
+                  <div className="mb-2 rounded-md shadow-lg w-50 h-fit bg-slate-600">
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      className="my-2 text-center bg-slate-600 focus:outline-none"
+                      onChange={(e) => setUsername(e.target.value)}
+                    />
+                  </div>
+                  <div className="flex px-5 rounded-md w-fit bg-slate-600">
+                    <div className="flex px-6 mx-1">
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        placeholder="Password"
+                        className="my-2 text-center rounded-md bg-slate-600 focus:outline-none"
+                        onChange={(e) => setPassword(e.target.value)}
+                      />
+                      <div className="w-6 h-6 mt-2 ">
+                        <button onClick={togglePassword}>
+                          <img
+                            src={showPassword ? hideIcon : showIcon}
+                            alt={showPassword ? "Hide" : "Show"}
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                   <button
-                    className="w-full p-2 my-2 rounded-md h-fit bg-slate-600"
+                    className="w-full p-2 my-2 bg-blue-500 rounded-md h-fit"
                     onClick={login}
                   >
                     Login

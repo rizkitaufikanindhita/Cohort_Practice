@@ -6,6 +6,7 @@ const loginSchema = z.object({
 });
 
 const accountSchema = z.object({
+  site: z.string(),
   account: z.string(),
   passwordAccount: z.string(),
 });

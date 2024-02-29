@@ -35,10 +35,11 @@ router.get("/dashboard", async (req, res) => {
 });
 
 router.post("/dashboard/add", async (req, res) => {
-  const { account, passwordAccount } = req.body;
+  const { site, account, passwordAccount } = req.body;
   const accountFormat = accountSchema.safeParse(req.body);
   if (accountFormat.success) {
     await Manager.create({
+      site: site,
       account: account,
       passwordAccount: passwordAccount,
     });
@@ -68,6 +69,7 @@ router.put("/dashboard/:id", async (req, res) => {
       _id: id,
     },
     {
+      site: site,
       account: account,
       passwordAccount: passwordAccount,
     }

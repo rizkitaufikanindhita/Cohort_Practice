@@ -4,13 +4,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/login/Login";
 import useAppStore from "./store";
 import { useEffect } from "react";
+import { shallow } from "zustand/shallow";
 
 function App() {
-  const fetchData = useAppStore((state) => state.fetchData);
+  const [fetchData, dataManager] = useAppStore(
+    (state) => [state.fetchData, state.dataManager],
+    shallow
+  );
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [dataManager]);
 
   return (
     <>

@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
 });
 
 const passwordManagerSchema = new mongoose.Schema({
+  site: String,
   account: String,
   passwordAccount: String,
 });

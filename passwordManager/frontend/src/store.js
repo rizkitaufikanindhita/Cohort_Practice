@@ -19,6 +19,15 @@ const useAppStore = create((set) => ({
       console.log(e);
     }
   },
+
+  site: "",
+  setSite: (site) => set({ site }),
+
+  account: "",
+  setAccount: (account) => set({ account }),
+
+  passwordAccount: "",
+  setPasswordAccount: (passwordAccount) => set({ passwordAccount }),
 }));
 
 export default useAppStore;
