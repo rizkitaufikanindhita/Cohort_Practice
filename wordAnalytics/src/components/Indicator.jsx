@@ -1,34 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Fragment, useEffect } from "react";
-import useAppStore from "../store";
-import { shallow } from "zustand/shallow";
+import { Fragment } from "react";
+import useCount from "../hooks";
 
 const Indicator = () => {
-  const [
+  const {
     setCountWord,
     setCountCharacters,
     setCountInstagram,
     setCountFacebook,
-    word,
-    setJumlahKata,
-    setJumlahHuruf,
-  ] = useAppStore(
-    (state) => [
-      state.setCountWord(),
-      state.setCountCharacters(),
-      state.setCountInstagram(),
-      state.setCountFacebook(),
-      state.word,
-      state.setJumlahKata,
-      state.setJumlahHuruf,
-    ],
-    shallow
-  );
-
-  useEffect(() => {
-    setJumlahKata();
-    setJumlahHuruf();
-  }, [word]);
+  } = useCount();
 
   return (
     <Fragment>
