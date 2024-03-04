@@ -1,13 +1,17 @@
 import { Fragment } from "react";
+import useAppStore from "../store";
 
 const Canvas = () => {
+  const setWord = useAppStore((state) => state.setWord);
+
   return (
     <Fragment>
-      <div className="bg-white w-full h-full rounded-xl">
+      <div className="w-full h-full bg-white rounded-xl">
         <textarea
           cols="30"
           rows="10"
-          className="outline-none p-10 w-full h-full rounded-l-xl"
+          className="w-full h-full p-10 outline-none rounded-l-xl"
+          onChange={(e) => setWord(e.target.value)}
         ></textarea>
       </div>
     </Fragment>
