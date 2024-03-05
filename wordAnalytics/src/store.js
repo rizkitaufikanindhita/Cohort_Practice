@@ -41,7 +41,7 @@ const useAppStore = create((set, getState) => ({
       set({ jumlahHuruf: 0 });
     } else {
       let kalimat = getState().word;
-      let jumlahnya = kalimat.length;
+      let jumlahnya = kalimat.replace(/\s+/g, "").length;
       set({ jumlahHuruf: jumlahnya });
     }
   },
