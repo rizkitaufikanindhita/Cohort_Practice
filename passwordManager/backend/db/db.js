@@ -5,7 +5,10 @@ require("dotenv").config();
 mongoose.connect(process.env.MONGODB_URL);
 
 const userSchema = new mongoose.Schema({
-  userSchema: String,
+  userSchema: {
+    type: String,
+    lowercase: true,
+  },
   password: String,
 });
 
