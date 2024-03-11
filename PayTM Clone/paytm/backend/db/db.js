@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
     lowercase: true,
-    minLength: 5,
+    minLength: 4,
     maxLength: 20,
     trim: true,
   },
@@ -19,14 +19,14 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minLength: 5,
+    minLength: 4,
   },
 
   firstName: {
     type: String,
     required: true,
     lowercase: true,
-    minLength: 5,
+    minLength: 4,
     maxLength: 20,
   },
 
@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     lowercase: true,
-    minLength: 5,
+    minLength: 4,
     maxLength: 20,
   },
 });

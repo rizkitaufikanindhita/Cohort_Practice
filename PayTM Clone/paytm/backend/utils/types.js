@@ -1,15 +1,15 @@
 const { z } = require("zod");
 
 const signUpFormat = z.object({
-  username: z.string().min(5).max(20),
-  password: z.string().min(5).max(10),
-  firstName: z.string().min(5).max(20),
-  lastName: z.string().min(5).max(20),
+  username: z.string().min(4).max(20),
+  password: z.string().min(4).max(10),
+  firstName: z.string().min(4).max(20),
+  lastName: z.string().min(4).max(20),
 });
 
 const signInFormat = z.object({
-  username: z.string().min(5).max(20),
-  password: z.string().min(5).max(10),
+  username: z.string().min(4).max(20),
+  password: z.string().min(4).max(10),
 });
 
 module.exports = {
