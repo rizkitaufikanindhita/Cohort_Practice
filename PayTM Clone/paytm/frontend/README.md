@@ -14,3 +14,5 @@ implementation :
 - react router dom
 - axios
 - debounce
+- useSearchParams
+- bulk filter untuk search

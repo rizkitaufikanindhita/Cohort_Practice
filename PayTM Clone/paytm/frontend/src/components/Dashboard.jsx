@@ -59,7 +59,13 @@ const Dashboard = () => {
     }, 300);
   };
 
-  console.log(user);
+  // console.log(user);
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    navigate("/signin");
+  };
 
   return (
     <Fragment>
@@ -88,7 +94,14 @@ const Dashboard = () => {
                 {item.username != username ? (
                   <div className="flex justify-between">
                     <div className="my-5">{item.firstname}</div>
-                    <button className="p-2 my-5 text-xl text-white rounded-md bg-slate-700">
+                    <button
+                      className="p-2 my-5 text-xl text-white rounded-md bg-slate-700"
+                      onClick={(e) =>
+                        navigate(
+                          `/send?id=${item.id}&firstname=${item.firstname}`
+                        )
+                      }
+                    >
                       Send Money
                     </button>
                   </div>
@@ -96,6 +109,14 @@ const Dashboard = () => {
               </div>
             );
           })}
+        </div>
+        <div className="mx-10">
+          <button
+            className="p-2 my-5 text-xl text-white rounded-md bg-slate-700"
+            onClick={logout}
+          >
+            Logout
+          </button>
         </div>
       </div>
     </Fragment>
