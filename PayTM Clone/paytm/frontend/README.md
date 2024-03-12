@@ -13,3 +13,4 @@ implementation :
 - custom hooks
 - react router dom
 - axios
+- debounce
