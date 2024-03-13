@@ -112,7 +112,9 @@ const useDebounce = (value, delay) => {
     }, delay);
 
     // Clean up the timer if the value changes before the delay has passed
-    return () => clearTimeout(timerId);
+    return () => {
+      clearTimeout(timerId);
+    };
   }, [value, delay]);
   // kalau ada perubahan pada value atau delay akan return () => clearTimeout(timerId) jika tidak ada perubahan maka akan setDebounceValue(value) setelah delay terlewati
 
