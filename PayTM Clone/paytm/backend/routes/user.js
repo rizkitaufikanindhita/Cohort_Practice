@@ -42,7 +42,7 @@ router.post("/signup", async (req, res) => {
         200,
         {
           message: "User Berhasil Didaftarkan",
-          token: `Bearer ${token}`,
+          token: token,
         },
         res
       );
@@ -73,7 +73,7 @@ router.post("/signin", async (req, res) => {
           200,
           {
             message: "Login Berhasil",
-            token: `Bearer ${token}`,
+            token: token,
           },
           res
         );

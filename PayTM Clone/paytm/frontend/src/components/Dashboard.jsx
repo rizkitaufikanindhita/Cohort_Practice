@@ -16,15 +16,20 @@ const Dashboard = () => {
 
   const username = localStorage.getItem("username");
 
-  const axiosWithToken = axios.create({
-    headers: {
-      Authorization: localStorage.getItem("token"),
-      "Content-Type": "application/json",
-    },
-  });
+  // const axiosWithToken = axios.create({
+  //   headers: {
+  //     Authorization: localStorage.getItem("token"),
+  //     "Content-Type": "application/json",
+  //   },
+  // });
 
   const data = async () => {
-    const response = await axiosWithToken.get(urlBalance);
+    const response = await axios.get(urlBalance, {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+        "Content-Type": "application/json",
+      },
+    });
     setBalance(response.data.data);
   };
 
@@ -32,8 +37,14 @@ const Dashboard = () => {
   const [user, setUser] = useState([]);
 
   const userData = async () => {
-    const response = await axiosWithToken.get(
-      `http://localhost:3000/api/v1/user/bulk?filter=${search}`
+    const response = await axios.get(
+      `http://localhost:3000/api/v1/user/bulk?filter=${search}`,
+      {
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("token"),
+          "Content-Type": "application/json",
+        },
+      }
     );
     setUser(response.data.data);
   };

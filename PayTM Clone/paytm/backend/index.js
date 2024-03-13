@@ -4,11 +4,15 @@ const cors = require("cors");
 const port = 3000;
 const indexEndpoints = require("./routes/index");
 
-app.use(express.json());
-app.use(cors());
+try {
+  app.use(express.json());
+  app.use(cors());
 
-app.use("/api/v1", indexEndpoints);
+  app.use("/api/v1", indexEndpoints);
 
-app.listen(port, () => {
-  console.log(`server up at port : ${port}`);
-});
+  app.listen(port, () => {
+    console.log(`server up at port : ${port}`);
+  });
+} catch (e) {
+  console.log(e);
+}

@@ -13,12 +13,12 @@ const SendMoney = () => {
 
   const [amount, setAmount] = useState();
 
-  const axiosWithToken = axios.create({
-    headers: {
-      Authorization: localStorage.getItem("token"),
-      "Content-Type": "application/json",
-    },
-  });
+  // const axiosWithToken = axios.create({
+  //   headers: {
+  //     Authorization: localStorage.getItem("token"),
+  //     "Content-Type": "application/json",
+  //   },
+  // });
 
   const body = {
     to: id,
@@ -26,7 +26,12 @@ const SendMoney = () => {
   };
 
   const transfer = async () => {
-    await axiosWithToken.post(urlTransfer, body);
+    await axios.post(urlTransfer, body, {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+        "Content-Type": "application/json",
+      },
+    });
     alert("Transfer Berhasil");
     navigate("/dashboard");
   };
