@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import useAppStore from "./store";
 import { shallow } from "zustand/shallow";
 import axios from "axios";
 const urlSignUp = import.meta.env.VITE_URL_SIGNUP;
 const urlSignIn = import.meta.env.VITE_URL_SIGNIN;
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const useSignUp = () => {
   const navigate = useNavigate();
@@ -99,4 +101,22 @@ const useSignIn = () => {
   };
 };
 
-export default { useSignUp, useSignIn };
+const useDebounce = (value, delay) => {
+  // State to store the debounced value
+  const [debounceValue, setDebounceValue] = useState(value);
+
+  useEffect(() => {
+    // Set up a timer to update the debounced value after the specified delay
+    const timerId = setTimeout(() => {
+      setDebounceValue(value);
+    }, delay);
+
+    // Clean up the timer if the value changes before the delay has passed
+    return () => clearTimeout(timerId);
+  }, [value, delay]);
+  // kalau ada perubahan pada value atau delay akan return () => clearTimeout(timerId) jika tidak ada perubahan maka akan setDebounceValue(value) setelah delay terlewati
+
+  return debounceValue;
+};
+
+export default { useSignUp, useSignIn, useDebounce };

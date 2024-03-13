@@ -6,6 +6,7 @@ import axios from "axios";
 import useAppStore from "../store";
 import { shallow } from "zustand/shallow";
 import { useNavigate } from "react-router-dom";
+import hooks from "../hooks";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -33,12 +34,18 @@ const Dashboard = () => {
     setBalance(response.data.data);
   };
 
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   const [user, setUser] = useState([]);
+
+  // debounce
+  const { useDebounce } = hooks;
+  const [inputValue, setInputValue] = useState("");
+  const debounceValue = useDebounce(inputValue, 500);
+  // diketik inputValue terupdate lalu setelah delay 500 maka value akan masuk ke debounceValue yang akan digunakan diAPI
 
   const userData = async () => {
     const response = await axios.get(
-      `http://localhost:3000/api/v1/user/bulk?filter=${search}`,
+      `http://localhost:3000/api/v1/user/bulk?filter=${debounceValue}`,
       {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
@@ -55,20 +62,20 @@ const Dashboard = () => {
 
   useEffect(() => {
     userData();
-  }, [search]);
+  }, [debounceValue]);
 
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-  };
+  // const handleSearch = (e) => {
+  //   setSearch(e.target.value);
+  // };
 
-  // debounce
-  let timeOutData;
-  const debounceUserData = (e) => {
-    clearTimeout(timeOutData);
-    timeOutData = setTimeout(() => {
-      handleSearch(e);
-    }, 300);
-  };
+  // // debounce
+  // let timeOutData;
+  // const debounceUserData = (e) => {
+  //   clearTimeout(timeOutData);
+  //   timeOutData = setTimeout(() => {
+  //     handleSearch(e);
+  //   }, 300);
+  // };
 
   // console.log(user);
 
@@ -94,7 +101,7 @@ const Dashboard = () => {
           <div className="p-5 mx-5 text-3xl font-semibold">Users</div>
           <input
             type="text"
-            onChange={(e) => debounceUserData(e)}
+            onChange={(e) => setInputValue(e.target.value)}
             className="w-11/12 p-2 mx-10 bg-gray-200 border-2 border-white rounded-md outline-none"
           />
         </div>
