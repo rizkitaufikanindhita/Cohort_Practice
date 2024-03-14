@@ -105,18 +105,13 @@ const useDebounce = (value, delay) => {
   // State to store the debounced value
   const [debounceValue, setDebounceValue] = useState(value);
 
+  let timeOut;
   useEffect(() => {
-    // Set up a timer to update the debounced value after the specified delay
-    const timerId = setTimeout(() => {
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() => {
       setDebounceValue(value);
     }, delay);
-
-    // Clean up the timer if the value changes before the delay has passed
-    return () => {
-      clearTimeout(timerId);
-    };
   }, [value, delay]);
-  // kalau ada perubahan pada value atau delay akan return () => clearTimeout(timerId) jika tidak ada perubahan maka akan setDebounceValue(value) setelah delay terlewati
 
   return debounceValue;
 };
