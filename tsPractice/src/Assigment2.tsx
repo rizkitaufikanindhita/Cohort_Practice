@@ -5,6 +5,7 @@ const Assignment2 = () => {
     title: string;
     description: string;
     done: boolean;
+    duration?: number; // tidak wajib ada
   }
 
   const todo: TodoType = {
