@@ -6,11 +6,11 @@ const Canvas = () => {
 
   return (
     <Fragment>
-      <div className="w-full h-full bg-white rounded-xl">
+      <div className="w-full h-full border-slate-600">
         <textarea
           cols="30"
           rows="10"
-          className="w-full h-full p-10 outline-none rounded-l-xl"
+          className="w-full h-full p-10 text-xl bg-white outline-none rounded-tl-xl rounded-tr-xl md:rounded-l-xl md:rounded-none md:text-2xl lg:text-4xl"
           placeholder="Enter your text"
           onChange={(e) => setWord(e.target.value)}
         ></textarea>

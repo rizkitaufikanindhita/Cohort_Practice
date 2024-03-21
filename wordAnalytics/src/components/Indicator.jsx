@@ -12,37 +12,45 @@ const Indicator = () => {
 
   return (
     <Fragment>
-      <div className="grid h-full grid-cols-2 rounded-r-xl bg-slate-400">
-        <div className="flex items-center justify-center w-full text-xs border">
+      <div className="grid h-full grid-cols-2 rounded-r-xl bg-slate-400 rounded-bl-xl">
+        <div className="flex items-center justify-center w-full p-2 border ">
           <div>
-            <div className="text-4xl font-semibold text-center">
+            <div className="text-3xl font-semibold text-center lg:text-4xl 2xl:text-6xl">
               {setCountWord}
             </div>
-            <div className="text-center">WORDS</div>
+            <div className="text-base text-center lg:text-xl 2xl:text-3xl">
+              WORDS
+            </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full text-xs border rounded-tr-xl">
+        <div className="flex items-center justify-center w-full p-2 border md:rounded-tr-xl ">
           <div>
-            <div className="text-4xl font-semibold text-center">
+            <div className="text-3xl font-semibold text-center lg:text-4xl 2xl:text-6xl">
               {setCountCharacters}
             </div>
-            <div className="text-center">CHARACTERS</div>
+            <div className="text-base text-center lg:text-xl 2xl:text-3xl">
+              CHARACTERS
+            </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full text-xs border">
+        <div className="flex items-center justify-center w-full p-2 border rounded-bl-xl md:rounded-none">
           <div>
-            <div className="text-4xl font-semibold text-center">
+            <div className="text-3xl font-semibold text-center lg:text-4xl 2xl:text-6xl">
               {setCountInstagram}
             </div>
-            <div className="text-center">INSTAGRAM</div>
+            <div className="text-base text-center lg:text-xl 2xl:text-3xl">
+              INSTAGRAM
+            </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full text-xs border rounded-br-xl">
+        <div className="flex items-center justify-center w-full p-2 border rounded-br-xl">
           <div>
-            <div className="text-4xl font-semibold text-center">
+            <div className="text-3xl font-semibold text-center lg:text-4xl 2xl:text-6xl">
               {setCountFacebook}
             </div>
-            <div className="text-center">FACEBOOKS</div>
+            <div className="text-base text-center lg:text-xl 2xl:text-3xl">
+              FACEBOOKS
+            </div>
           </div>
         </div>
       </div>
