@@ -7,7 +7,9 @@ const Show = () => {
   const dataManager = useAppStore((state) => state.dataManager);
 
   const deleteData = async (e) => {
-    await axios.delete(`http://localhost:3000/dashboard/${e}`);
+    await axios.delete(
+      `https://passwordvaultbackend.vercel.app/dashboard/${e}`
+    );
   };
 
   return (

@@ -11,8 +11,15 @@ const useAppStore = create((set) => ({
 
   dataManager: [],
   fetchData: async () => {
+    const axiosWithToken = await axios.create({
+      headers: {
+        Authorization: localStorage.getItem("username"),
+        "Content-Type": "application/json",
+      },
+    });
+
     try {
-      const response = await axios.get(url);
+      const response = await axiosWithToken.get(url);
       const data = response.data.data;
       set({ dataManager: data });
     } catch (e) {

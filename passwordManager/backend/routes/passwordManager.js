@@ -6,6 +6,7 @@ const { loginSchema } = require("../utils/types");
 const { accountSchema } = require("../utils/types");
 const cors = require("cors");
 const { User, Manager } = require("../db/db");
+const usermiddleware = require("../middleware/usermiddleware");
 
 app.use(express.json());
 app.use(cors());
@@ -29,7 +30,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.get("/dashboard", async (req, res) => {
+router.get("/dashboard", usermiddleware, async (req, res) => {
   const data = await Manager.find({});
   response(200, data, res);
 });
@@ -49,7 +50,7 @@ router.post("/dashboard/add", async (req, res) => {
   }
 });
 
-router.delete("/dashboard/:id", async (req, res) => {
+router.delete("/dashboard/:id", usermiddleware, async (req, res) => {
   const id = req.params.id;
   const dataDeleted = await Manager.findOneAndDelete({
     _id: id,
