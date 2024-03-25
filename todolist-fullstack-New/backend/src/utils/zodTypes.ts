@@ -15,7 +15,6 @@ const signInTypes = z.object({
 const addTodoTypes = z.object({
   title: z.string().min(3),
   description: z.string().min(3),
-  userId: z.string(),
 });
 
 export default { signUpTypes, signInTypes, addTodoTypes };

@@ -2,7 +2,6 @@ import { Request, Response, NextFunction } from "express";
 import response from "../utils/response";
 import jwt from "jsonwebtoken";
 import prisma from "../utils/db";
-import { any } from "zod";
 import statusCode from "../utils/statusCode";
 
 interface AuthRequest extends Request {

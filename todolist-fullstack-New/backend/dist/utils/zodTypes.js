@@ -14,6 +14,5 @@ const signInTypes = zod_1.z.object({
 const addTodoTypes = zod_1.z.object({
     title: zod_1.z.string().min(3),
     description: zod_1.z.string().min(3),
-    userId: zod_1.z.string(),
 });
 exports.default = { signUpTypes, signInTypes, addTodoTypes };
