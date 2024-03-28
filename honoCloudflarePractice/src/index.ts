@@ -1,5 +1,9 @@
 import { Hono } from "hono";
 import authmiddleware from "./middleware/authmiddleware";
+import { PrismaClient } from "@prisma/client/edge";
+import { withAccelerate } from "@prisma/extension-accelerate";
+import { z } from "zod";
+import { env } from "hono/adapter";
 
 const app = new Hono();
 
@@ -7,41 +11,47 @@ app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
 
-const todo = [
-  {
-    no: 1,
-    title: "task 1",
-    description: "task 1 with extra step should be done eod",
-  },
-  {
-    no: 2,
-    title: "task 2",
-    description: "task 2 with extra step should be done eod",
-  },
-  {
-    no: 3,
-    title: "task 3",
-    description: "task 3 with extra step should be done eod",
-  },
-  {
-    no: 4,
-    title: "task 4",
-    description: "task 4 with extra step should be done eod",
-  },
-  {
-    no: 5,
-    title: "task 5",
-    description: "task 5 with extra step should be done eod",
-  },
-];
+app.post("/add", authmiddleware, async (c) => {
+  const { DATABASE_URL } = env<{ DATABASE_URL: string }>(c);
+  const prisma = new PrismaClient({
+    datasourceUrl: DATABASE_URL,
+  }).$extends(withAccelerate()); // penting
+
+  const addSchema = z.object({
+    title: z.string().min(2).max(20),
+    description: z.string().min(2).max(200),
+  });
+  const body = await c.req.json();
+  const addVerif = addSchema.safeParse(body);
+
+  if (addVerif.success) {
+    await prisma.todo.create({
+      data: {
+        title: body.title,
+        description: body.description,
+      },
+    });
+  } else {
+    return c.json({
+      message: addVerif.error.errors,
+    });
+  }
+
+  return c.json({
+    message: "add todo success",
+  });
+});
 
 app.get("/show", authmiddleware, async (c) => {
-  const todoList = todo.map((item) => ({
-    no: item.no,
-    title: item.title,
-    description: item.description,
-  }));
-  return c.json(todoList);
+  const { DATABASE_URL } = env<{ DATABASE_URL: string }>(c);
+  const prisma = new PrismaClient({
+    datasourceUrl: DATABASE_URL,
+  }).$extends(withAccelerate()); // penting untuk menunjukkan kalau masuk ke connection pool dulu baru ke db
+
+  const todoData = await prisma.todo.findMany({});
+  return c.json({
+    message: todoData,
+  });
 });
 
 export default app;
