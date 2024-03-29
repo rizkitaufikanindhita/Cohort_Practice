@@ -38,7 +38,7 @@ app.post("/add", authmiddleware, async (c) => {
   }
 
   return c.json({
-    message: "add todo success",
+    message: "Add Todo Success",
   });
 });
 
