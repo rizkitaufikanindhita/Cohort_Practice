@@ -1,12 +1,14 @@
 # Semua yang telah dipelajari
 
 ## Foundation
+
 - Foundation Javascript
-- Node.js 
+- Node.js
 - MongoDB
 - Postgres
 
 ## Backend
+
 - Express
 - ORM : Mongoose, Prisma
 - Middlewares
@@ -20,6 +22,7 @@
 - Bcrypt
 
 ## Frontend
+
 - React
 - Context API
 - State Management Using Zustand
@@ -27,6 +30,6 @@
 - Tailwind
 - Shadcn UI
 
-## 
+##
 
-## 
+##
