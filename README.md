@@ -1,4 +1,4 @@
-# Semua yang telah dipelajari
+# Semua Yang Telah Dipelajari
 
 ## Foundation
 - Foundation Javascript
