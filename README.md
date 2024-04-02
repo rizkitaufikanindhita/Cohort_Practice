@@ -1,4 +1,4 @@
-# Semua yang telah dipelajari
+# Semua Yang Telah Dipelajari
 
 ## Foundation
 
@@ -32,4 +32,12 @@
 
 ##
 
+<<<<<<< HEAD
+
 ##
+
+=======
+
+##
+
+> > > > > > > 43e248a801256337eb9971f7a80329e1526e4a67
