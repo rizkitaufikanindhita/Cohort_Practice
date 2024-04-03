@@ -25,12 +25,16 @@
 
 - React
 - Context API
+- Debounce
 - State Management Using Zustand
 - Custom Hooks
 - Tailwind
 - Shadcn UI
 
-##
+## Basic Devops
+
+- Deploying to AWS Servers (Backend)
+- Nginx and Reverse Proxies
 
 <<<<<<< HEAD
 
