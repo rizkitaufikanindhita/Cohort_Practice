@@ -6,6 +6,7 @@
 - Node.js
 - MongoDB
 - Postgres
+- Typescript
 
 ## Backend
 
@@ -33,15 +34,6 @@
 
 ## Basic Devops
 
-- Deploying to AWS Servers (Backend)
+- Deploying to AWS Servers (Backend) => EC2
 - Nginx and Reverse Proxies
-
-<<<<<<< HEAD
-
-##
-
-=======
-
-##
-
-> > > > > > > 43e248a801256337eb9971f7a80329e1526e4a67
+- Deploying to AWS Servers (Frontend) => S3, CloudFront
