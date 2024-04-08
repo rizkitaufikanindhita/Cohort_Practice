@@ -37,3 +37,4 @@
 - Deploying to AWS Servers (Backend) => EC2
 - Nginx and Reverse Proxies
 - Deploying to AWS Servers (Frontend) => S3, CloudFront
+- Docker Basic
