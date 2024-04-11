@@ -21,6 +21,7 @@
 - Hono
 - JWT
 - Bcrypt
+- Deploying npm Packages
 
 ## Frontend
 
