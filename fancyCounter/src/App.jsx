@@ -17,7 +17,7 @@ function App() {
       <div className="grid rounded-md shadow-xl bg-slate-500 w-80 h-96 grid-rows-10">
         <div className="mt-5 text-gray-300 row-span-8">
           <div className="mt-5 text-2xl font-bold text-center">
-            {counter < 5 ? "FANCY COUNTER" : "LIMIT! BUY PRO FOR > 5"}
+            {counter < 10 ? "FANCY COUNTER" : "LIMIT! BUY PRO FOR > 10"}
           </div>
           <div className="my-5 text-center text-9xl">{counter}</div>
           <div className="text-center">
