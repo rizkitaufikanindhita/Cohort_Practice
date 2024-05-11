@@ -19,7 +19,7 @@ blog.use("/*", async (c, next) => {
   const headers = c.req.header("Authorization")
   const token = headers?.split(" ")[1]
   if (!token) {
-    c.json({
+    return c.json({
       msg: 'unauthorize'
     })
   } else {
@@ -27,7 +27,7 @@ blog.use("/*", async (c, next) => {
     const decode: any = await verify(token, jwtPassword)
     const id: any = decode.id
     if (!id) {
-      c.json({
+      return c.json({
         msg: 'unauthorize'
       })
     } else {
@@ -45,10 +45,11 @@ blog.get("/bulk", async (c) => {
   const dataPost = await prisma.post.findMany({
     where: { published: true },
     select: {
+      id: true,
       title: true,
       content: true,
       published: true,
-      authorId: true
+      author: {select: {name: true}}
     }
   })
 
@@ -70,7 +71,7 @@ blog.get("/:id", async (c) => {
       title: true,
       content: true,
       published: true,
-      authorId: true
+      author:  {select : {name : true}}
     }
   })
 
