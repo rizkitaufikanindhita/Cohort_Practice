@@ -39,9 +39,6 @@ const PostComp = () => {
             <img src={plusIcon} className="w-4 pt-1 h-fit"/>
           </Link>
         </div>
-        <div className="pr-5 pt-5 pl-3">
-          For You
-        </div>
       </div>
       <hr />
       <div className="px-16 py-8">
