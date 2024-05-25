@@ -15,7 +15,7 @@ const todos = [
     { no: 4, todos: 'todo 4', status: 'process' },
     { no: 5, todos: 'todo 5', status: 'process' }
 ];
-app.get('/todos', (_req, res) => {
+app.get('/', (_req, res) => {
     let listTodo = [];
     for (let i = 0; i < 5; i++) {
         if (Math.random() > 0.5) {

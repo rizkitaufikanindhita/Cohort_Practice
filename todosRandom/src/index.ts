@@ -1,4 +1,4 @@
-import express from 'express'
+import express, {Request, Response} from 'express'
 import cors from 'cors'
 
 const port = 3300
@@ -14,7 +14,7 @@ const todos: object[] = [
   { no: 5, todos: 'todo 5', status: 'process' }
 ]
 
-app.get('/todos', (_req, res) => {
+app.get('/', (_req: Request, res: Response) => {
   let listTodo = []
   for (let i = 0; i < 5; i++) {
     if (Math.random() > 0.5) {

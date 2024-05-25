@@ -4,7 +4,6 @@ import {
   MenubarContent,
   MenubarItem,
   MenubarMenu,
-  MenubarSeparator,
   MenubarTrigger,
 } from "@/components/ui/menubar"
 import { useNavigate } from "react-router-dom"
@@ -28,14 +27,6 @@ const MenubarComp = () => {
               <div className="py-1.5 w-8 h-8 bg-slate-600 text-sm text-white rounded-full cursor-pointer">{nama ? nama.slice(0,2).toUpperCase() : null}</div>
             </MenubarTrigger>
             <MenubarContent>
-              <MenubarItem>
-                Detail
-              </MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>
-                Update
-              </MenubarItem>
-              <MenubarSeparator />
               <MenubarItem>
                 <div className="text-red-500" onClick={signout}>
                   Sign Out
