@@ -1,15 +1,14 @@
 import { NextRequest, NextResponse } from "next/server"
-import { PrismaClient } from "@prisma/client"
+import prisma from "@/app/db"
 
-const prisma = new PrismaClient()
-
-export const GET = async() => {
-  const response = await prisma.user.findMany({select:{name: true,email: true}})
-  
-  return NextResponse.json({
-    msg: response
-  })
-}
+// kalau di fe pakai prisma jadi tidak perlu ada GET di api
+// export const GET = async() => {
+//   const response = await prisma.user.findMany({select:{name: true,email: true}})
+//
+//   return NextResponse.json({
+//     msg: response
+//   })
+// }
 
 export const POST = async(req: NextRequest) => {
   type signup = {
@@ -18,6 +17,12 @@ export const POST = async(req: NextRequest) => {
   }
 
   const body: signup = await req.json()
+
+  // headers
+  console.log(req.headers.get("authorization"))
+  
+  // query params
+  console.log(req.nextUrl.searchParams.get('name'))
 
   const user = await prisma.user.create({
     data : {
