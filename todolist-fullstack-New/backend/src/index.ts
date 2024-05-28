@@ -11,13 +11,13 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (_req: Request, res: Response) => {
   response(statusCode.OK, "server is running", res);
 });
 
 app.use("/api/v1", indexEndpoint);
 
-app.use((err: any, req: Request, res: Response, next: NextFunction) => {
+app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   response(statusCode.Bad_Request, { msg: `ada error karena ${err}` }, res);
 });
 

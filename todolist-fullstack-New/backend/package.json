@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "nodemon dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +25,8 @@
     "nodemon": "^3.1.0",
     "prisma": "^5.11.0",
     "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }

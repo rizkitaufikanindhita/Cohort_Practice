@@ -13,11 +13,11 @@ require("dotenv").config();
 const port = process.env.PORT;
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
     (0, response_1.default)(statusCode_1.default.OK, "server is running", res);
 });
 app.use("/api/v1", index_1.default);
-app.use((err, req, res, next) => {
+app.use((err, _req, res, _next) => {
     (0, response_1.default)(statusCode_1.default.Bad_Request, { msg: `ada error karena ${err}` }, res);
 });
 app.listen(port, () => {
