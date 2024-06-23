@@ -1,4 +1,6 @@
 import CredentialsProvider from "next-auth/providers/credentials"
+import GoogleProvider from "next-auth/providers/google"
+import GitHubProvider from "next-auth/providers/github"
 
 // NEXT_AUTH dibuat tersendiri dari route.ts yang di api/auth karena agar saat menggunakan getServerSession datanya sama dengan client (useSession)
 export const NEXT_AUTH = {
@@ -26,6 +28,14 @@ export const NEXT_AUTH = {
           email:email
         }
       }
+    }),
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID || "",
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET || ""
+    }),
+    GitHubProvider({
+      clientId: process.env.GITHUB_ID || "",
+      clientSecret: process.env.GITHUB_SECRET || ""
     })
   ],
   // secret ini untuk keperluan jwt
@@ -46,5 +56,8 @@ export const NEXT_AUTH = {
       }
       return session
     }
+  },
+  pages: {
+    signIn: "/signin" 
   }
 }
