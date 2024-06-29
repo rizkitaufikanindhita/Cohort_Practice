@@ -1,13 +1,8 @@
-"use client"
-
-import { Button } from "@repo/ui/components/ui/button";
-import prisma from "@repo/db/database"
-import store from "@repo/store/useBalance"
-
+import prisma from "@repo/db/database";
+import BalanceComp from "./components/BalanceComp";
+import SigninComp from "./components/SigninComp";
 
 const Page = async() => {
-  const { useBalance } = store
-  const balance = useBalance((state: any) => state.balance)
 
   const result = await prisma.user.findMany({})
 
@@ -16,16 +11,14 @@ const Page = async() => {
       {result.map((data: any,index: any)=>{
         return(
         <div key={index} className="mx-10">
-            <div>{data.id}</div>
+            {/* <div>{data.id}</div> */}
             <div>{data.email}</div>
             <div>{data.name}</div>
         </div>
         )
       })}
-      <div>{balance}</div>
-      <div className="mx-10">
-        <Button>Click me</Button>
-      </div>
+      <BalanceComp />
+      <SigninComp />
     </main>
   );
 }

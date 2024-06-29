@@ -9,10 +9,13 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/ui": "*",
     "@repo/db": "*",
     "@repo/store": "*",
+    "@repo/ui": "*",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
     "next": "14.2.4",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18"
   },
