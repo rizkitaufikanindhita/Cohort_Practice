@@ -25,13 +25,14 @@
 
 ## Frontend
 
-- React
+- ReactJS
 - Context API
 - Debounce
 - State Management Using Zustand
 - Custom Hooks
 - Tailwind
 - Shadcn UI
+- NextJS
 
 ## Basic Devops
 
