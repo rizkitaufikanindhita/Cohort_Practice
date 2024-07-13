@@ -5,7 +5,7 @@ import prisma from "@repo/db/database"
 export const NEXT_AUTH = {
   providers:[
     CredentialsProvider({
-      name: "Credentials",
+      name: "Credentials", // nama yang muncul pada button
       credentials: {
         email: {label:"email", type:"text", placeholder:"Johndoe@email.com"},
         name: {label:"name", type:"text", placeholder:"John Doe"},
@@ -29,6 +29,7 @@ export const NEXT_AUTH = {
           const validationPassword = await bcrypt.compare(credentials.password, existingUser.password)
           if(validationPassword){
             return {
+              // return ini langsung masuk ke cookies
               id: existingUser.id.toString(),
               name: existingUser.name,
               email: existingUser.email

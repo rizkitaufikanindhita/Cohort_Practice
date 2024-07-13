@@ -11,7 +11,8 @@ const todos: object[] = [
   { no: 2, todos: 'todo 2', status: 'process' },
   { no: 3, todos: 'todo 3', status: 'process' },
   { no: 4, todos: 'todo 4', status: 'process' },
-  { no: 5, todos: 'todo 5', status: 'process' }
+  { no: 5, todos: 'todo 5', status: 'process' },
+  { no: 6, todos: 'todo 6', status: 'process' }
 ]
 
 app.get('/', (_req: Request, res: Response) => {
@@ -22,7 +23,9 @@ app.get('/', (_req: Request, res: Response) => {
     }
   }
   res.json({
-    msg: listTodo
+    msg: listTodo,
+    data: "Data fetched successfully",
+    about: "Todo task random API"
   })
 })
 

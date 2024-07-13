@@ -13,7 +13,8 @@ const todos = [
     { no: 2, todos: 'todo 2', status: 'process' },
     { no: 3, todos: 'todo 3', status: 'process' },
     { no: 4, todos: 'todo 4', status: 'process' },
-    { no: 5, todos: 'todo 5', status: 'process' }
+    { no: 5, todos: 'todo 5', status: 'process' },
+    { no: 6, todos: 'todo 6', status: 'process' }
 ];
 app.get('/', (_req, res) => {
     let listTodo = [];
@@ -23,7 +24,8 @@ app.get('/', (_req, res) => {
         }
     }
     res.json({
-        msg: listTodo
+        msg: listTodo,
+        data: "data received"
     });
 });
 app.listen(port, () => {
