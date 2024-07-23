@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [socket, setSocket] = useState<WebScoket | null>(null);
+  const [socket, setSocket] = useState<WebSocket | null>(null);
   const [datas, setDatas] = useState("");
   const [messageClient, setMessageClient] = useState("");
 
