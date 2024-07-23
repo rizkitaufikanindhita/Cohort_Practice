@@ -1,5 +1,6 @@
 import express from "express";
 import { Redis } from "@upstash/redis";
+require("dotenv").config();
 
 const app = express();
 const port = 3000;
@@ -7,8 +8,8 @@ const port = 3000;
 app.use(express.json());
 
 const redis = new Redis({
-  url: "https://sure-cheetah-31966.upstash.io",
-  token: "AXzeAAIncDFhMTc5YTc3MjBmNDM0ODMwYTliNzQ5ODdjYjAxNzUxOXAxMzE5NjY",
+  url: process.env.UPSTASH_URL,
+  token: process.env.UPSTASH_TOKEN,
 });
 
 app.get("/", (req, res) => {
