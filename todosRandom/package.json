@@ -17,7 +17,9 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@types/swagger-ui-express": "^4.1.6",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "swagger-ui-express": "^5.0.1"
   }
 }
