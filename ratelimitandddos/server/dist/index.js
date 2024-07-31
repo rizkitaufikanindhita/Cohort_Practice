@@ -73,6 +73,7 @@ app.post("/resetPassword", passwordResetLimiter, (req, res) => __awaiter(void 0,
                 response: token,
             },
         });
+        console.log(response);
         if (!response.data.success) {
             return res.json({
                 msg: "invalid captcha",

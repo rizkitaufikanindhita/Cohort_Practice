@@ -18,8 +18,8 @@ function App() {
     try {
       const response = await axios.post("http://localhost:3210/resetPassword", {
         email: "rizki@gmail.com",
-        otp: "667474",
-        newPassword: "okjkdajk",
+        otp: "945242",
+        newPassword: "passwordsuperkuatboss",
         token: captcha,
       });
 
