@@ -1,0 +1,2 @@
+- melakukan asg dengan aws 
+
